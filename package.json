@@ -1,0 +1,14 @@
+{
+  "name": "livraria",
+  "version": "1.0.0",
+  "description": "API para gerenciamento de uma livraria",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "uuid": "^9.0.1"
+  }
+}
