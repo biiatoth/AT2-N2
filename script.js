@@ -34,13 +34,11 @@ const saveBooks = (books) => {
     }
 };
 
-// Listagem dos livros
 app.get('/books', (req, res) => {
     const books = loadBooks();
     res.json(books);
 });
 
-// Cadastro de novos livros
 app.post('/books', (req, res) => {
     const books = loadBooks();
     const newBook = {
@@ -56,7 +54,6 @@ app.post('/books', (req, res) => {
     res.status(201).json(newBook);
 });
 
-// Compra de um livro
 app.post('/books/:id/buy', (req, res) => {
     const books = loadBooks();
     const bookId = req.params.id;
